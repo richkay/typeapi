@@ -1,0 +1,36 @@
+{
+  "name": "karmahub",
+  "version": "1.2.0",
+  "description": "Karma Api Hub",
+  "main": "dist/index.js",
+  "author": "RichCode",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsnd --respawn ./src/index.ts",
+    "start": "nodemon ./dist/index.js",
+    "prod": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.16.1",
+    "@types/graphql": "^14.0.7",
+    "@types/moment": "^2.13.0",
+    "apollo-server": "^2.4.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "http": "^0.0.0",
+    "nodemon": "^1.18.10",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.32"
+  },
+  "apidoc": {
+    "title": "Custom apiDoc browser title",
+    "url": "localhost:4400"
+  }
+}
